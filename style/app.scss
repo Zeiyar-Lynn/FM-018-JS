@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700);
+
+* {
+   margin: 0;
+}
+
+:root {
+   --clr-red: hsl(0, 100%, 74%);
+   --clr-green: hsl(154, 59%, 51%);
+   --clr-blue: hsl(248, 32%, 49%);
+   --clr-d-blue: hsl(249, 10%, 26%);
+   --clr-g-blue: hsl(246, 25%, 77%);
+}
+
+a {
+   text-decoration: none;
+}
+
+body {
+   background: var(--clr-red) url(../images/bg-intro-mobile.png) no-repeat
+      center -10px;
+}
+
+main {
+   margin: 5rem auto 4rem;
+   width: 90%;
+   max-width: 25rem;
+   font-family: "Poppin", sans-serif;
+   text-align: center;
+   color: #fff;
+}
+
+#sct-1 {
+   margin-bottom: 2.5rem;
+   padding-inline: 1.7rem;
+
+   h1 {
+      font-size: 1.8rem;
+   }
+
+   p {
+      margin-top: 1.5rem;
+      line-height: 1.5;
+   }
+}
+
+#sct-2 {
+   #trial {
+      margin-bottom: 1.5rem;
+      padding: 1.1rem 5rem;
+      background-color: var(--clr-blue);
+      font-size: 15px;
+      line-height: 1.8;
+      letter-spacing: 1px;
+      color: hsla(100%, 100%, 100%, 0.9);
+      border-radius: 8px;
+   }
+
+   #trial span {
+      color: #fff;
+      font-weight: 600;
+   }
+
+   form,
+   #trial {
+      box-shadow: 0 8px hsla(0%, 0%, 0%, 0.1);
+   }
+
+   input,
+   form {
+      width: 100%;
+      box-sizing: border-box;
+   }
+
+   form {
+      padding: 1.3rem;
+      background-color: #fff;
+      border-radius: 8px;
+
+      input {
+         height: 2.5rem;
+         border: 1px solid var(--clr-g-blue);
+         border-radius: 5px;
+         font-weight: 600;
+         padding-left: 1rem;
+      }
+      
+      input:focus {
+         outline: 2px solid var(--clr-g-blue);
+      }
+      
+      input,
+      button {
+         font-family: "poppins", "san-serif";
+      }
+      button {
+         width: 100%;
+         padding: 0.8rem 0;
+         margin-bottom: 1rem;
+         font-size: 14px;
+         letter-spacing: 1px;
+         color: #fff;
+         background-color: var(--clr-green);
+         border: none;
+         border-radius: 5px;
+         box-shadow: 0 5px rgba(1, 150, 0, 0.6);
+         cursor: pointer;
+      }
+      
+      button:hover {
+         opacity: 0.9;
+      }
+      
+      p {
+         color: var(--clr-g-blue);
+         font-size: 12px;
+         padding: 0 1.4em;
+      }
+      
+      a {
+         font-weight: 700;
+         color: var(--clr-red);
+      }
+      
+      a:hover {
+         text-decoration: underline;
+      }
+   }
+   .inp-ctr {
+      margin-bottom: 2rem;
+      position: relative;
+   }
+   img, small {
+      position: absolute;
+      transition: 1s;
+      opacity: 0;
+   }
+   img {
+      right: 1.3rem;
+      top: 8px;
+   } 
+   small {
+      right: 5px;
+      bottom: -19px;
+      color: var(--clr-red);
+      font-size: 12px;
+      font-style: italic;
+      font-weight: 600;
+   };
+
+   .error img, .error small {
+      opacity: 1;
+   }
+}
+
+@media (min-width: 1000px) {
+   main {
+      display: flex;
+      justify-content: space-between;
+      max-width: 950px;
+   }
+
+   #sct-1 {
+      flex-basis: 45%;
+      align-self: center;
+      margin-block: 2rem 0;
+      text-align: left;
+   
+      h1 {
+         font-size: 3rem;
+      }
+      p {
+         font-size: 15px;
+      }
+   }
+
+   #sct-2 {
+      flex-basis: 45%;
+
+      #trial {
+         padding: 1.1rem 3rem;
+      }
+      form {
+         padding: 2rem;
+
+         input {
+            height: 2.8rem;
+         }
+      }
+
+      .error img {
+         top: 11px;
+      }
+   }
+}

@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700);
+* {
+  margin: 0;
+}
+
+:root {
+  --clr-red: hsl(0, 100%, 74%);
+  --clr-green: hsl(154, 59%, 51%);
+  --clr-blue: hsl(248, 32%, 49%);
+  --clr-d-blue: hsl(249, 10%, 26%);
+  --clr-g-blue: hsl(246, 25%, 77%);
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: var(--clr-red) url(../images/bg-intro-mobile.png) no-repeat center -10px;
+}
+
+main {
+  margin: 5rem auto 4rem;
+  width: 90%;
+  max-width: 25rem;
+  font-family: "Poppin", sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+#sct-1 {
+  margin-bottom: 2.5rem;
+  padding-inline: 1.7rem;
+}
+
+#sct-1 h1 {
+  font-size: 1.8rem;
+}
+
+#sct-1 p {
+  margin-top: 1.5rem;
+  line-height: 1.5;
+}
+
+#sct-2 #trial {
+  margin-bottom: 1.5rem;
+  padding: 1.1rem 5rem;
+  background-color: var(--clr-blue);
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+}
+
+#sct-2 #trial span {
+  color: #fff;
+  font-weight: 600;
+}
+
+#sct-2 form,
+#sct-2 #trial {
+  -webkit-box-shadow: 0 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px rgba(0, 0, 0, 0.1);
+}
+
+#sct-2 input,
+#sct-2 form {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#sct-2 form {
+  padding: 1.3rem;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+#sct-2 form input {
+  height: 2.5rem;
+  border: 1px solid var(--clr-g-blue);
+  border-radius: 5px;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+#sct-2 form input:focus {
+  outline: 2px solid var(--clr-g-blue);
+}
+
+#sct-2 form input,
+#sct-2 form button {
+  font-family: "poppins", "san-serif";
+}
+
+#sct-2 form button {
+  width: 100%;
+  padding: 0.8rem 0;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: var(--clr-green);
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px rgba(1, 150, 0, 0.6);
+          box-shadow: 0 5px rgba(1, 150, 0, 0.6);
+  cursor: pointer;
+}
+
+#sct-2 form button:hover {
+  opacity: 0.9;
+}
+
+#sct-2 form p {
+  color: var(--clr-g-blue);
+  font-size: 12px;
+  padding: 0 1.4em;
+}
+
+#sct-2 form a {
+  font-weight: 700;
+  color: var(--clr-red);
+}
+
+#sct-2 form a:hover {
+  text-decoration: underline;
+}
+
+#sct-2 .inp-ctr {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+#sct-2 img, #sct-2 small {
+  position: absolute;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+}
+
+#sct-2 img {
+  right: 1.3rem;
+  top: 8px;
+}
+
+#sct-2 small {
+  right: 5px;
+  bottom: -19px;
+  color: var(--clr-red);
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+#sct-2 .error img, #sct-2 .error small {
+  opacity: 1;
+}
+
+@media (min-width: 1000px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 950px;
+  }
+  #sct-1 {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-block: 2rem 0;
+    text-align: left;
+  }
+  #sct-1 h1 {
+    font-size: 3rem;
+  }
+  #sct-1 p {
+    font-size: 15px;
+  }
+  #sct-2 {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  #sct-2 #trial {
+    padding: 1.1rem 3rem;
+  }
+  #sct-2 form {
+    padding: 2rem;
+  }
+  #sct-2 form input {
+    height: 2.8rem;
+  }
+  #sct-2 .error img {
+    top: 11px;
+  }
+}
+/*# sourceMappingURL=app.css.map */
